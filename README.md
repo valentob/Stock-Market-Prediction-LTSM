@@ -32,4 +32,4 @@ To run this project, you will need the following compilers installed on your sys
 
 ## Project Report
 
-A detailed project report, outlining the methodologies, data analysis, model development, and results, is included in this repository. Please refer to `annotated-Project report - Stock market prediction.pdf` for in-depth information.
+A detailed project report, outlining the methodologies, data analysis, model development, and results, is included in this repository. Please refer to `Project report - Stock market prediction.pdf` for in-depth information.
