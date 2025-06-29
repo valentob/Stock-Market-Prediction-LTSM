@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.OutputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Output Window" Height="498" Width="884">
+    <Grid Margin="10">
+        <StackPanel Margin="-13,299,398,-88">
+            <TextBlock Text="Comments:" FontSize="10" FontWeight="Bold" Width="406" Height="19"/>
+            <TextBox x:Name="CommentsBox" Height="86" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" 
+                     AcceptsReturn="True" FontSize="16" Width="416" TextChanged="CommentsBox_TextChanged" RenderTransformOrigin="0.5,0.5" >
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.218"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.396"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+        </StackPanel>
+        <Button Content="Add comment" HorizontalAlignment="Right" VerticalAlignment="Top" Width="150" Height="30" Click="AddComment_Click" Margin="0,397,10,0" Background ="Red" Foreground ="White"/>
+
+        <Button Content="Export results" HorizontalAlignment="Right" VerticalAlignment="Top" Width="150" Height="30" Click="ExportResults_Click" Margin="0,10,10,0" Background ="Red" Foreground ="White"/>
+
+        <oxy:PlotView x:Name="plotView" Margin="10,78,258,173" Visibility="Visible"/>
+    </Grid>
+</Window>
